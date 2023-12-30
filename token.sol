@@ -12,7 +12,7 @@ error WithdrawTransfer();
 
 contract DPEP is ERC20, Ownable {
     constructor(string memory _name, string memory _symbol, address to) ERC20(_name, _symbol) Ownable(msg.sender) {
-        uint256 amount = 500000000 * 10 ** 18;
+        uint256 amount = 100000000 * 10 ** 18;
         _mint(to, amount);
     }
 
